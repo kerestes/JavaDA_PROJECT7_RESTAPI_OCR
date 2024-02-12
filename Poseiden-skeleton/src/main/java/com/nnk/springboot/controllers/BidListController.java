@@ -1,6 +1,7 @@
 package com.nnk.springboot.controllers;
 
 import com.nnk.springboot.domain.BidList;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,8 +17,10 @@ public class BidListController {
     // TODO: Inject Bid service
 
     @RequestMapping("/bidList/list")
-    public String home(Model model)
+    public String home(Model model, HttpServletRequest request)
     {
+        model.addAttribute("user", request.getRemoteUser());
+        model.addAttribute("title", "Bid List");
         // TODO: call service find all bids to show to the view
         return "bidList/list";
     }
