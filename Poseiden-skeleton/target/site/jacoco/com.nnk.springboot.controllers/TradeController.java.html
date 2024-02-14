@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TradeController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-skeleton</a> &gt; <a href="index.source.html" class="el_package">com.nnk.springboot.controllers</a> &gt; <span class="el_source">TradeController.java</span></div><h1>TradeController.java</h1><pre class="source lang-java linenums">package com.nnk.springboot.controllers;
+
+import com.nnk.springboot.domain.RuleName;
+import com.nnk.springboot.domain.Trade;
+import com.nnk.springboot.services.TradeService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Optional;
+
+@Controller
+<span class="fc" id="L21">public class TradeController {</span>
+
+<span class="fc" id="L23">    private final String title = &quot;Trade&quot;;</span>
+    @Autowired
+    private TradeService tradeService;
+
+    @RequestMapping(&quot;/trade/list&quot;)
+    public ModelAndView home(HttpServletRequest request)
+    {
+<span class="fc" id="L30">        ModelAndView response = new ModelAndView(&quot;trade/list&quot;);</span>
+<span class="fc" id="L31">        response.addObject(&quot;title&quot;, title);</span>
+<span class="fc" id="L32">        response.addObject(&quot;user&quot;, request.getRemoteUser());</span>
+<span class="fc" id="L33">        response.addObject(&quot;trades&quot;, tradeService.findAll());</span>
+<span class="fc" id="L34">        return response;</span>
+    }
+
+    @GetMapping(&quot;/trade/add&quot;)
+    public ModelAndView addUser(Trade trade) {
+<span class="fc" id="L39">        ModelAndView response = new ModelAndView(&quot;trade/add&quot;);</span>
+<span class="fc" id="L40">        response.addObject(&quot;title&quot;, title + &quot; - ADD&quot;);</span>
+<span class="fc" id="L41">        return response;</span>
+    }
+
+    @PostMapping(&quot;/trade/validate&quot;)
+    public String validate(@Valid Trade trade, BindingResult result) {
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        if(result.hasErrors())</span>
+<span class="fc" id="L47">            return &quot;trade/add&quot;;</span>
+<span class="fc" id="L48">        tradeService.save(trade);</span>
+<span class="fc" id="L49">        return &quot;redirect:/trade/list&quot;;</span>
+    }
+
+    @GetMapping(&quot;/trade/update/{id}&quot;)
+    public ModelAndView showUpdateForm(@PathVariable(&quot;id&quot;) Integer id) {
+<span class="fc" id="L54">        ModelAndView response = new ModelAndView();</span>
+<span class="fc" id="L55">        Optional&lt;Trade&gt; trade = tradeService.findById(id);</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">        if(trade.isPresent()){</span>
+<span class="fc" id="L57">            response.setViewName(&quot;trade/update&quot;);</span>
+<span class="fc" id="L58">            response.addObject(&quot;title&quot;, title + &quot; - UPDATE&quot;);</span>
+<span class="fc" id="L59">            response.addObject(&quot;trade&quot;, trade.get());</span>
+<span class="fc" id="L60">            return response;</span>
+        }
+<span class="fc" id="L62">        response.setViewName(&quot;redirect:/trade/list?error=true&quot;);</span>
+<span class="fc" id="L63">        return response;</span>
+    }
+
+    @PostMapping(&quot;/trade/update/{id}&quot;)
+    public String updateTrade(@PathVariable(&quot;id&quot;) Integer id, @Valid Trade trade,
+                             BindingResult result) {
+<span class="fc bfc" id="L69" title="All 2 branches covered.">        if(result.hasErrors())</span>
+<span class="fc" id="L70">            return &quot;trade/update&quot;;</span>
+<span class="fc" id="L71">        tradeService.save(trade);</span>
+<span class="fc" id="L72">        return &quot;redirect:/trade/list&quot;;</span>
+    }
+
+    @GetMapping(&quot;/trade/delete/{id}&quot;)
+    public String deleteTrade(@PathVariable(&quot;id&quot;) Integer id) {
+<span class="fc" id="L77">        tradeService.deleteById(id);</span>
+<span class="fc" id="L78">        return &quot;redirect:/trade/list&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

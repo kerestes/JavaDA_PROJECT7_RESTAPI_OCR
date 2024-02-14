@@ -1,0 +1,1 @@
+insert into rating(moodys_rating, sand_p_rating, fitch_rating, order_number) values ("Moodys Test", "Sand P Test", "Fitch Test", 3), ("Moodys Test 2", "Sand P Test 2", "Fitch Test 2", 6);

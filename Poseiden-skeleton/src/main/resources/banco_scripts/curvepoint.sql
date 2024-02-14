@@ -1,0 +1,1 @@
+insert into curve_point(term, value) values (1.1, 2.2), (3.3, 4.4);

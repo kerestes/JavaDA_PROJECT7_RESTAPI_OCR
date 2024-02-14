@@ -1,0 +1,1 @@
+insert into bid_list(account, type, bid_quantity) values ("Account Test", "Type Test", 3.2), ("Account Test 2", "Type Test 2", 5.2);

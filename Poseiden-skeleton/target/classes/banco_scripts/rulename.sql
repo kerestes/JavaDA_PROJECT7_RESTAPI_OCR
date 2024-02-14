@@ -1,0 +1,1 @@
+insert into rule_name(name, description, json, template, sql_str, sql_part) values ("Name Test", "Description Test", "Json Test", "Template Test", "Sql Str Test", "Sql Part Test"), ("Name Test 2", "Description Test 2", "Json Test 2", "Template Test 2", "Sql Str Test 2", "Sql Part Test 2");

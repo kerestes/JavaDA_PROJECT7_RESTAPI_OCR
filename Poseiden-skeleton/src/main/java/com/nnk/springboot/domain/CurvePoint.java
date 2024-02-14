@@ -19,7 +19,9 @@ public class CurvePoint {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;
+    @Column(name = "curve_id")
     private Integer curveId;
+    @Column(name = "as_of_date")
     private Timestamp asOfDate;
     @NotNull(message = "Term is mandatory")
     @DecimalMin(value= "0.1", message = "Term is mandatory")
@@ -27,5 +29,6 @@ public class CurvePoint {
     @NotNull(message = "Value is mandatory")
     @DecimalMin(value= "0.1", message = "Value is mandatory")
     private Double value;
+    @Column(name = "creation_date")
     private Timestamp creationDate;
 }

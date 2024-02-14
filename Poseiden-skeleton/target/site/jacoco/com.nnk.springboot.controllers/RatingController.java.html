@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RatingController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-skeleton</a> &gt; <a href="index.source.html" class="el_package">com.nnk.springboot.controllers</a> &gt; <span class="el_source">RatingController.java</span></div><h1>RatingController.java</h1><pre class="source lang-java linenums">package com.nnk.springboot.controllers;
+
+import com.nnk.springboot.domain.CurvePoint;
+import com.nnk.springboot.domain.Rating;
+import com.nnk.springboot.services.RatingService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Optional;
+
+@Controller
+<span class="fc" id="L21">public class RatingController {</span>
+
+<span class="fc" id="L23">    private final String title = &quot;Rating&quot;;</span>
+    @Autowired
+    private RatingService ratingService;
+
+    @RequestMapping(&quot;/rating/list&quot;)
+    public ModelAndView home(HttpServletRequest request)
+    {
+<span class="fc" id="L30">        ModelAndView response = new ModelAndView(&quot;rating/list&quot;);</span>
+<span class="fc" id="L31">        response.addObject(&quot;title&quot;, title);</span>
+<span class="fc" id="L32">        response.addObject(&quot;user&quot;, request.getRemoteUser());</span>
+<span class="fc" id="L33">        response.addObject(&quot;ratings&quot;, ratingService.findAll());</span>
+<span class="fc" id="L34">        return response;</span>
+    }
+
+    @GetMapping(&quot;/rating/add&quot;)
+    public ModelAndView addRatingForm(Rating rating) {
+<span class="fc" id="L39">        ModelAndView response = new ModelAndView(&quot;rating/add&quot;);</span>
+<span class="fc" id="L40">        response.addObject(&quot;title&quot;, title + &quot; - ADD&quot;);</span>
+<span class="fc" id="L41">        return response;</span>
+    }
+
+    @PostMapping(&quot;/rating/validate&quot;)
+    public String validate(@Valid Rating rating, BindingResult result) {
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        if(result.hasErrors())</span>
+<span class="fc" id="L47">            return &quot;rating/add&quot;;</span>
+<span class="fc" id="L48">        ratingService.save(rating);</span>
+<span class="fc" id="L49">        return &quot;redirect:/rating/list&quot;;</span>
+    }
+
+    @GetMapping(&quot;/rating/update/{id}&quot;)
+    public ModelAndView showUpdateForm(@PathVariable(&quot;id&quot;) Integer id) {
+<span class="fc" id="L54">        ModelAndView response = new ModelAndView();</span>
+<span class="fc" id="L55">        Optional&lt;Rating&gt; rating = ratingService.findById(id);</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">        if(rating.isPresent()){</span>
+<span class="fc" id="L57">            response.setViewName(&quot;rating/update&quot;);</span>
+<span class="fc" id="L58">            response.addObject(&quot;title&quot;, title + &quot; - UPDATE&quot;);</span>
+<span class="fc" id="L59">            response.addObject(&quot;rating&quot;, rating.get());</span>
+<span class="fc" id="L60">            return response;</span>
+        }
+<span class="fc" id="L62">        response.setViewName(&quot;redirect:/rating/list?error=true&quot;);</span>
+<span class="fc" id="L63">        return response;</span>
+    }
+
+    @PostMapping(&quot;/rating/update/{id}&quot;)
+    public String updateRating(@PathVariable(&quot;id&quot;) Integer id, @Valid Rating rating,
+                             BindingResult result) {
+<span class="fc bfc" id="L69" title="All 2 branches covered.">        if(result.hasErrors())</span>
+<span class="fc" id="L70">            return &quot;rating/update&quot;;</span>
+<span class="fc" id="L71">        ratingService.save(rating);</span>
+<span class="fc" id="L72">        return &quot;redirect:/rating/list&quot;;</span>
+    }
+
+    @GetMapping(&quot;/rating/delete/{id}&quot;)
+    public String deleteRating(@PathVariable(&quot;id&quot;) Integer id) {
+<span class="fc" id="L77">        ratingService.deleteById(id);</span>
+<span class="fc" id="L78">        return &quot;redirect:/rating/list&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

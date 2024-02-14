@@ -1,0 +1,1 @@
+insert into trade(account, type, buy_quantity) values ("Account Test", "Type Test", 5.5), ("Account Test 2", "Type Test 2", 9.9);
