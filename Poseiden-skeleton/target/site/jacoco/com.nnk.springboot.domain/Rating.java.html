@@ -4,30 +4,34 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.Setter;
 
-<span class="fc" id="L10">@Getter</span>
-<span class="fc" id="L11">@Setter</span>
+@Getter
+<span class="fc" id="L12">@Setter</span>
 @Entity
 @Table(name = &quot;rating&quot;)
-<span class="fc" id="L14">public class Rating {</span>
+<span class="fc" id="L15">public class Rating {</span>
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer id;
-    @NotBlank(message = &quot;Moodys Rating is mandatory&quot;)
+<span class="fc" id="L19">    private Integer id;</span>
+    @NotNull(message = &quot;Moodys Rating is mandatory&quot;)
+    @Positive(message = &quot;Order Number Rating is mandatory&quot;)
     @Column(name = &quot;moodys_rating&quot;)
-    private String moodysRating;
-    @NotBlank(message = &quot;Sand Rating is mandatory&quot;)
+<span class="fc" id="L23">    private Integer moodysRating;</span>
+    @NotNull(message = &quot;Sand Rating is mandatory&quot;)
+    @Positive(message = &quot;Order Number Rating is mandatory&quot;)
     @Column(name = &quot;sand_p_rating&quot;)
-    private String sandPRating;
-    @NotBlank(message = &quot;Fitch Rating is mandatory&quot;)
+<span class="fc" id="L27">    private Integer sandPRating;</span>
+    @NotNull(message = &quot;Fitch Rating is mandatory&quot;)
+    @Positive(message = &quot;Order Number Rating is mandatory&quot;)
     @Column(name = &quot;fitch_rating&quot;)
-    private String fitchRating;
+<span class="fc" id="L31">    private Integer fitchRating;</span>
     @NotNull(message = &quot;Order Number Rating is mandatory&quot;)
-    @Min(value = 1, message = &quot;Order Number Rating is mandatory&quot;)
+    @Positive(message = &quot;Order Number Rating is mandatory&quot;)
     @Column(name = &quot;order_number&quot;)
-    private Integer orderNumber;
+<span class="fc" id="L35">    private Integer orderNumber;</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

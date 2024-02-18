@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d82d9594-97cf-4104-8d40-f9f60f5cfa40" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/JavaDA_PROJECT7_RESTAPI_OCR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/JavaDA_PROJECT7_RESTAPI_OCR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banco_scripts/rating.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banco_scripts/rating.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nnk/springboot/integration/RatingServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nnk/springboot/integration/RatingServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nnk/springboot/unit/RatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nnk/springboot/unit/RatingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nnk/springboot/unit/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nnk/springboot/unit/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banco_scripts/rating.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/banco_scripts/rating.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/WebSecurityConfiguration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/WebSecurityConfiguration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/WebSecurityConfiguration.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/WebSecurityConfiguration.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.config/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.controllers/BidListController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.controllers/BidListController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.controllers/BidListController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.controllers/BidListController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Rating.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Rating.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Rating.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Trade.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Trade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Trade.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/Trade.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/User.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/User.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/User.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/User.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.domain/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.services/UserService.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.services/UserService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.services/UserService.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.nnk.springboot.services/UserService.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.BidListServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.BidListServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.CurvePointServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.CurvePointServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.RatingServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.RatingServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.RuleNameServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.RuleNameServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.TradeServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.TradeServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.UserServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.integration.UserServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.BidTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.BidTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.CourvePointTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.CourvePointTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.CustomErrorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.CustomErrorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.HomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.HomeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.LoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.LoginTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.RatingTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.RatingTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.RuleNameTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.RuleNameTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.TradeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.TradeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nnk.springboot.unit.UserTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.BidListServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.BidListServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.CurvePointServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.CurvePointServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.RatingServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.RatingServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.RuleNameServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.RuleNameServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.TradeServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.TradeServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.UserServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.integration.UserServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.BidTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.BidTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.CourvePointTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.CourvePointTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.CustomErrorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.CustomErrorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.HomeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.HomeTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.LoginTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.LoginTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.RatingTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.RatingTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.RuleNameTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.RuleNameTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.TradeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.TradeTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nnk.springboot.unit.UserTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/BidListServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/BidListServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/CurvePointServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/CurvePointServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/RatingServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/RatingServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/RuleNameServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/RuleNameServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/TradeServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/TradeServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/integration/UserServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/BidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/BidTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/CourvePointTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/CourvePointTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/CustomErrorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/CustomErrorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/HomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/RatingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/RatingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/RuleNameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/RuleNameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/TradeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/TradeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nnk/springboot/unit/UserTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2cXENFuD1rkgh3TN6GHMNlVjt0O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.BidListServiceTest.executor": "Run",
+    "JUnit.BidTest.executor": "Run",
+    "JUnit.CourvePointTest.executor": "Run",
+    "JUnit.CurvePointServiceTest.executor": "Run",
+    "JUnit.CustomErrorTest.executor": "Run",
+    "JUnit.HomeTest.executor": "Run",
+    "JUnit.LoginTest.executor": "Run",
+    "JUnit.RatingServiceTest.executor": "Run",
+    "JUnit.RatingServiceTest.ratingIT.executor": "Run",
+    "JUnit.RatingTest.ratingUpdateValidatorTest.executor": "Run",
+    "JUnit.RuleNameServiceTest.executor": "Run",
+    "JUnit.RuleNameTest.executor": "Run",
+    "JUnit.TradeServiceTest.executor": "Run",
+    "JUnit.TradeTest.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.userListTest.executor": "Run",
+    "Maven.spring-boot-skeleton [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.BidListServiceTest">
+    <configuration name="BidListServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-skeleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nnk.springboot.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nnk.springboot.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.nnk.springboot.integration.BidListServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurvePointServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-skeleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nnk.springboot.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nnk.springboot.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.nnk.springboot.integration.CurvePointServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RatingServiceTest.ratingIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-skeleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nnk.springboot.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nnk.springboot.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.nnk.springboot.integration.RatingServiceTest" />
+      <option name="METHOD_NAME" value="ratingIT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuleNameServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-skeleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nnk.springboot.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nnk.springboot.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.nnk.springboot.integration.RuleNameServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TradeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-skeleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nnk.springboot.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nnk.springboot.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.nnk.springboot.integration.TradeServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BidListServiceTest" />
+        <item itemvalue="JUnit.CurvePointServiceTest" />
+        <item itemvalue="JUnit.RatingServiceTest.ratingIT" />
+        <item itemvalue="JUnit.RuleNameServiceTest" />
+        <item itemvalue="JUnit.TradeServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-e1d2075fd9a7-d3c01152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d82d9594-97cf-4104-8d40-f9f60f5cfa40" name="Changes" comment="" />
+      <created>1708249481169</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708249481169</updated>
+    </task>
+    <servers />
+  </component>
+</project>

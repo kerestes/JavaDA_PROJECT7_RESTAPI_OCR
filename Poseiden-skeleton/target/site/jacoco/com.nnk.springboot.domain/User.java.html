@@ -2,25 +2,28 @@
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
 
-<span class="fc" id="L8">@Getter</span>
-<span class="fc" id="L9">@Setter</span>
+@Getter
+<span class="fc" id="L10">@Setter</span>
 @Entity
 @Table(name = &quot;users&quot;)
-<span class="fc" id="L12">public class User {</span>
+<span class="fc" id="L13">public class User {</span>
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer id;
+<span class="fc" id="L17">    private Integer id;</span>
     @NotBlank(message = &quot;Username is mandatory&quot;)
-    private String username;
+<span class="fc" id="L19">    private String username;</span>
     @NotBlank(message = &quot;Password is mandatory&quot;)
-    private String password;
+    @Pattern(regexp=&quot;^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&amp;])[A-Za-z\\d@$!%*?&amp;]{8,}$&quot;, message = &quot;password must be min 8 length containing at least 1 uppercase, 1 lowercase, 1 special character and 1 digit&quot;)
+    //&quot;^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&amp;])[A-Za-z\d@$!%*?&amp;]{8,}$&quot;
+<span class="fc" id="L23">    private String password;</span>
     @NotBlank(message = &quot;FullName is mandatory&quot;)
-    private String fullname;
+<span class="fc" id="L25">    private String fullname;</span>
     @NotBlank(message = &quot;Role is mandatory&quot;)
-    private String role;
+<span class="fc" id="L27">    private String role;</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

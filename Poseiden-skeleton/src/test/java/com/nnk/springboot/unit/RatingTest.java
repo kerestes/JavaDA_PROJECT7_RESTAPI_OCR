@@ -41,16 +41,16 @@ public class RatingTest {
 
         Rating rating1 = new Rating();
         rating1.setId(1);
-        rating1.setFitchRating("Fitch test");
-        rating1.setMoodysRating("Moody test");
-        rating1.setSandPRating("Sand test");
+        rating1.setFitchRating(100);
+        rating1.setMoodysRating(200);
+        rating1.setSandPRating(300);
         rating1.setOrderNumber(100);
 
         Rating rating2 = new Rating();
         rating2.setId(1);
-        rating2.setFitchRating("Fitch test 2");
-        rating2.setMoodysRating("Moody test 2");
-        rating2.setSandPRating("Sand test 2");
+        rating2.setFitchRating(400);
+        rating2.setMoodysRating(500);
+        rating2.setSandPRating(600);
         rating2.setOrderNumber(100);
 
         List<Rating> ratings =  new ArrayList<>(Arrays.asList(rating1, rating2));
@@ -65,10 +65,10 @@ public class RatingTest {
 
         String content = resultActions.getResponse().getContentAsString();
 
-        Assertions.assertTrue(content.contains("Fitch test"));
-        Assertions.assertTrue(content.contains("Fitch test 2"));
-        Assertions.assertTrue(content.contains("Moody test"));
-        Assertions.assertTrue(content.contains("Moody test 2"));
+        Assertions.assertTrue(content.contains("100"));
+        Assertions.assertTrue(content.contains("400"));
+        Assertions.assertTrue(content.contains("200"));
+        Assertions.assertTrue(content.contains("500"));
 
         Mockito.verify(ratingService, Mockito.times(1)).findAll();
     }
@@ -109,9 +109,9 @@ public class RatingTest {
     public void ratingValidateTest() throws Exception {
 
         Rating rating = new Rating();
-        rating.setFitchRating("Fitch test");
-        rating.setMoodysRating("Moody test");
-        rating.setSandPRating("Sand test");
+        rating.setFitchRating(100);
+        rating.setMoodysRating(200);
+        rating.setSandPRating(300);
         rating.setOrderNumber(100);
 
         Mockito.when(ratingService.save(any())).thenReturn(null);
@@ -142,9 +142,9 @@ public class RatingTest {
 
         Rating rating = new Rating();
         rating.setId(1);
-        rating.setFitchRating("Fitch test");
-        rating.setMoodysRating("Moody test");
-        rating.setSandPRating("Sand test");
+        rating.setFitchRating(100);
+        rating.setMoodysRating(200);
+        rating.setSandPRating(300);
         rating.setOrderNumber(100);
 
         Mockito.when(ratingService.findById(anyInt())).thenReturn(Optional.of(rating));
@@ -187,9 +187,9 @@ public class RatingTest {
 
         Rating rating = new Rating();
         rating.setId(1);
-        rating.setFitchRating("Fitch test");
-        rating.setMoodysRating("Moody test");
-        rating.setSandPRating("Sand test");
+        rating.setFitchRating(100);
+        rating.setMoodysRating(200);
+        rating.setSandPRating(300);
         rating.setOrderNumber(100);
 
         Mockito.when(ratingService.save(any())).thenReturn(null);

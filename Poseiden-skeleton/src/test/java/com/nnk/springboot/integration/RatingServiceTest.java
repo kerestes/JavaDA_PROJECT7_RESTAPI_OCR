@@ -36,13 +36,13 @@ public class RatingServiceTest {
             rating2 = ratings.get(0);
         }
 
-        Assertions.assertEquals("Moodys Test", rating1.getMoodysRating());
-        Assertions.assertEquals("Sand P Test", rating1.getSandPRating());
-        Assertions.assertEquals("Fitch Test", rating1.getFitchRating());
+        Assertions.assertEquals(100, rating1.getMoodysRating());
+        Assertions.assertEquals(200, rating1.getSandPRating());
+        Assertions.assertEquals(300, rating1.getFitchRating());
         Assertions.assertEquals(3, rating1.getOrderNumber());
-        Assertions.assertEquals("Moodys Test 2", rating2.getMoodysRating());
-        Assertions.assertEquals("Sand P Test 2", rating2.getSandPRating());
-        Assertions.assertEquals("Fitch Test 2", rating2.getFitchRating());
+        Assertions.assertEquals(400, rating2.getMoodysRating());
+        Assertions.assertEquals(500, rating2.getSandPRating());
+        Assertions.assertEquals(600, rating2.getFitchRating());
         Assertions.assertEquals(6, rating2.getOrderNumber());
 
         Assertions.assertTrue(ratings.size() == 2);
@@ -50,9 +50,9 @@ public class RatingServiceTest {
         //Save Test
 
         Rating rating = new Rating();
-        rating.setMoodysRating("new Moodys");
-        rating.setSandPRating("new Sand P");
-        rating.setFitchRating("new Fitch");
+        rating.setMoodysRating(700);
+        rating.setSandPRating(800);
+        rating.setFitchRating(900);
         rating.setOrderNumber(9);
 
         Rating ratingResponse = ratingService.save(rating);
@@ -64,7 +64,7 @@ public class RatingServiceTest {
         Optional<Rating> optionalRating = ratingService.findById(3);
 
         Assertions.assertTrue(optionalRating.isPresent());
-        Assertions.assertEquals("new Fitch", optionalRating.get().getFitchRating());
+        Assertions.assertEquals(900, optionalRating.get().getFitchRating());
         Assertions.assertEquals(9, optionalRating.get().getOrderNumber());
 
         // Delete Test

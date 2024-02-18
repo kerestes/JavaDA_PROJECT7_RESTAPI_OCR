@@ -2,6 +2,7 @@
 
 import com.nnk.springboot.domain.User;
 import com.nnk.springboot.repositories.UserRepository;
+import jakarta.validation.constraints.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,17 +10,17 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-<span class="fc" id="L12">public class UserService {</span>
+<span class="fc" id="L13">public class UserService {</span>
 
     @Autowired
     private UserRepository userRepository;
 
-<span class="fc" id="L17">    public List&lt;User&gt; findAll(){ return userRepository.findAll(); }</span>
+<span class="fc" id="L18">    public List&lt;User&gt; findAll(){ return userRepository.findAll(); }</span>
 
-<span class="fc" id="L19">    public User save(User user){ return userRepository.save(user); }</span>
+<span class="fc" id="L20">    public User save(User user){ return userRepository.save(user); }</span>
 
-<span class="fc" id="L21">    public Optional&lt;User&gt; findById(Integer id){ return userRepository.findById(id); }</span>
+<span class="fc" id="L22">    public Optional&lt;User&gt; findById(Integer id){ return userRepository.findById(id); }</span>
 
-<span class="fc" id="L23">    public void deleteById(Integer id){ userRepository.deleteById(id); }</span>
+<span class="fc" id="L24">    public void deleteById(Integer id){ userRepository.deleteById(id); }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

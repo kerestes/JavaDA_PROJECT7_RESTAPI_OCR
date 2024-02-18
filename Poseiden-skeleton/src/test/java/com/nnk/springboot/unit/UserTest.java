@@ -105,7 +105,7 @@ public class UserTest {
         User user = new User();
         user.setUsername("User_1");
         user.setRole("USER");
-        user.setPassword("123456789");
+        user.setPassword("TestTest2*");
         user.setFullname("User 1");
 
         Mockito.when(userService.save(any())).thenReturn(null);
@@ -182,7 +182,7 @@ public class UserTest {
         user.setId(1);
         user.setUsername("User_1");
         user.setRole("USER");
-        user.setPassword("123456789");
+        user.setPassword("TestTest2*");
         user.setFullname("User 1");
 
         Mockito.when(userService.save(any())).thenReturn(null);
