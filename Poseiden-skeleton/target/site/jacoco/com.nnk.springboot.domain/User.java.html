@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
+<span class="fc" id="L8">@Getter</span>
 <span class="fc" id="L9">@Setter</span>
 @Entity
 @Table(name = &quot;users&quot;)
@@ -13,14 +13,14 @@ import lombok.Setter;
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-<span class="fc" id="L16">    private Integer id;</span>
+    private Integer id;
     @NotBlank(message = &quot;Username is mandatory&quot;)
-<span class="fc" id="L18">    private String username;</span>
+    private String username;
     @NotBlank(message = &quot;Password is mandatory&quot;)
-<span class="fc" id="L20">    private String password;</span>
+    private String password;
     @NotBlank(message = &quot;FullName is mandatory&quot;)
-<span class="fc" id="L22">    private String fullname;</span>
+    private String fullname;
     @NotBlank(message = &quot;Role is mandatory&quot;)
-<span class="fc" id="L24">    private String role;</span>
+    private String role;
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

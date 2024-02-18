@@ -10,7 +10,7 @@ import lombok.Setter;
 import java.sql.Timestamp;
 
 
-@Getter
+<span class="pc" id="L13">@Getter</span>
 <span class="pc" id="L14">@Setter</span>
 @Entity
 @Table(name = &quot;curve_point&quot;)
@@ -18,18 +18,18 @@ import java.sql.Timestamp;
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-<span class="fc" id="L21">    private Integer id;</span>
+    private Integer id;
     @Column(name = &quot;curve_id&quot;)
-<span class="fc" id="L23">    private Integer curveId;</span>
+    private Integer curveId;
     @Column(name = &quot;as_of_date&quot;)
-<span class="nc" id="L25">    private Timestamp asOfDate;</span>
+    private Timestamp asOfDate;
     @NotNull(message = &quot;Term is mandatory&quot;)
     @DecimalMin(value= &quot;0.1&quot;, message = &quot;Term is mandatory&quot;)
-<span class="fc" id="L28">    private Double term;</span>
+    private Double term;
     @NotNull(message = &quot;Value is mandatory&quot;)
     @DecimalMin(value= &quot;0.1&quot;, message = &quot;Value is mandatory&quot;)
-<span class="fc" id="L31">    private Double value;</span>
+    private Double value;
     @Column(name = &quot;creation_date&quot;)
-<span class="nc" id="L33">    private Timestamp creationDate;</span>
+    private Timestamp creationDate;
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

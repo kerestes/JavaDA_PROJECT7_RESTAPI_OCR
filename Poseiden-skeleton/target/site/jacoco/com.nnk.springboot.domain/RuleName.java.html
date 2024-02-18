@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
+<span class="fc" id="L9">@Getter</span>
 <span class="fc" id="L10">@Setter</span>
 @Entity
 @Table(name = &quot;rule_name&quot;)
@@ -14,20 +14,20 @@ import lombok.Setter;
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-<span class="fc" id="L17">    private Integer id;</span>
+    private Integer id;
     @NotBlank(message = &quot;Name is mandatory&quot;)
-<span class="fc" id="L19">    private String name;</span>
+    private String name;
     @NotBlank(message = &quot;Description is mandatory&quot;)
-<span class="fc" id="L21">    private String description;</span>
+    private String description;
     @NotBlank(message = &quot;Json is mandatory&quot;)
-<span class="fc" id="L23">    private String json;</span>
+    private String json;
     @NotBlank(message = &quot;Template is mandatory&quot;)
-<span class="fc" id="L25">    private String template;</span>
+    private String template;
     @NotBlank(message = &quot;SQL String is mandatory&quot;)
     @Column(name = &quot;sql_str&quot;)
-<span class="fc" id="L28">    private String sqlStr;</span>
+    private String sqlStr;
     @NotBlank(message = &quot;SQL Part is mandatory&quot;)
     @Column(name = &quot;sql_part&quot;)
-<span class="fc" id="L31">    private String sqlPart;</span>
+    private String sqlPart;
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

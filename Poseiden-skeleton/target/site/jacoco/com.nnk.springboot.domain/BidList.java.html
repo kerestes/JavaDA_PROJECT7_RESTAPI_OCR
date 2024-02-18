@@ -10,7 +10,7 @@ import lombok.Setter;
 
 import java.sql.Timestamp;
 
-@Getter
+<span class="pc" id="L13">@Getter</span>
 <span class="pc" id="L14">@Setter</span>
 @Entity
 @Table(name = &quot;bid_list&quot;)
@@ -19,41 +19,41 @@ import java.sql.Timestamp;
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = &quot;id&quot;)
-<span class="fc" id="L22">    private Integer bidListId;</span>
+    private Integer bidListId;
     @NotBlank(message = &quot;Account is mandatory&quot;)
-<span class="fc" id="L24">    private String account;</span>
+    private String account;
     @NotBlank(message = &quot;Type is mandatory&quot;)
-<span class="fc" id="L26">    private String type;</span>
+    private String type;
     @NotNull(message = &quot;Bid Quantity is mandatory&quot;)
     @DecimalMin(value= &quot;0.1&quot;, message = &quot;Bid Quantity is mandatory&quot;)
     @Column(name = &quot;bid_quantity&quot;)
-<span class="fc" id="L30">    private Double bidQuantity;</span>
+    private Double bidQuantity;
     @Column(name = &quot;ask_quantity&quot;)
-<span class="nc" id="L32">    private Double askQuantity;</span>
-<span class="nc" id="L33">    private Double bid;</span>
-<span class="nc" id="L34">    private Double ask;</span>
-<span class="nc" id="L35">    private String benchmark;</span>
+    private Double askQuantity;
+    private Double bid;
+    private Double ask;
+    private String benchmark;
     @Column(name = &quot;bid_list_date&quot;)
-<span class="nc" id="L37">    private Timestamp bidListDate;</span>
-<span class="nc" id="L38">    private String commentary;</span>
-<span class="nc" id="L39">    private String security;</span>
-<span class="nc" id="L40">    private String status;</span>
-<span class="nc" id="L41">    private String trader;</span>
-<span class="nc" id="L42">    private String book;</span>
+    private Timestamp bidListDate;
+    private String commentary;
+    private String security;
+    private String status;
+    private String trader;
+    private String book;
     @Column(name = &quot;creation_name&quot;)
-<span class="nc" id="L44">    private String creationName;</span>
+    private String creationName;
     @Column(name = &quot;creation_date&quot;)
-<span class="nc" id="L46">    private Timestamp creationDate;</span>
+    private Timestamp creationDate;
     @Column(name = &quot;revision_name&quot;)
-<span class="nc" id="L48">    private String revisionName;</span>
+    private String revisionName;
     @Column(name = &quot;revision_date&quot;)
-<span class="nc" id="L50">    private Timestamp revisionDate;</span>
+    private Timestamp revisionDate;
     @Column(name = &quot;deal_name&quot;)
-<span class="nc" id="L52">    private String dealName;</span>
+    private String dealName;
     @Column(name = &quot;deal_type&quot;)
-<span class="nc" id="L54">    private String dealType;</span>
+    private String dealType;
     @Column(name = &quot;source_list_id&quot;)
-<span class="nc" id="L56">    private String sourceListId;</span>
-<span class="nc" id="L57">    private String side;</span>
+    private String sourceListId;
+    private String side;
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
